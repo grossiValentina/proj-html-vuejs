@@ -38,6 +38,7 @@ export default {
 </template>
 
 <style lang="scss">
+@use "./components/style/partials/variables";
 @use "./components/style/general.scss";
 @import "@fortawesome/fontawesome-free/css/all.css";
 
