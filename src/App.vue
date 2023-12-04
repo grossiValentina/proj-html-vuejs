@@ -1,5 +1,6 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
+import AppButton from "./components/AppButton.vue";
 import AppMain from "./components/AppMain.vue";
 import AppFooter from "./components/AppFooter.vue";
 import { store } from "./store.js";
@@ -20,17 +21,18 @@ export default {
     },
 
   components :{
-      AppHeader,
-      AppMain,
-      AppFooter,
-    
-}
+    AppHeader,
+    AppButton,
+    AppMain,
+    AppFooter,
+},
 }
 
 </script>
 
 <template>
 <AppHeader />
+<AppButton />
 <AppMain />
 <AppFooter />
 
@@ -38,7 +40,6 @@ export default {
 </template>
 
 <style lang="scss">
-@use "./components/style/partials/variables";
 @use "./components/style/general.scss";
 @import "@fortawesome/fontawesome-free/css/all.css";
 
