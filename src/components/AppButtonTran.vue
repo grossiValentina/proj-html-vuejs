@@ -18,6 +18,7 @@ export default {
 
 <style scoped lang="scss">
 @use "./style/partials/variables" as *;
+
 button{
     border-color: $BlueChillVibrant;
     color: $BlueChillVibrant;

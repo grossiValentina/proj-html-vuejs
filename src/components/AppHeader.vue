@@ -86,16 +86,16 @@ export default {
 
             <!-- titolo del main e contenuto  -->
             <div class="my-container">
-                <h4>LOGISTICS SERVICE</h4>
+                <h5>LOGISTICS SERVICE</h5>
                 <h1 class="fw-bold">CARGO TRANSPORT</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quod, reiciendis impedit architecto sunt
                     nulla consequatur, corporis ducimus doloremque hic, eligendi aut quidem totam qui ratione nam explicabo.
                     Est, quaerat.</p>
-                    <div class="d-flex align-items-end pt-2">
-                        <AppButton buttonText="GET IN TOUCH"/>
-                        <AppButtonTran class="ms-3 align-items-end" buttonText="READ MORE"/>
-                    </div>
-                
+                <!-- bottoni riutilizzabili  -->
+                <div class="d-flex align-items-end pt-2">
+                    <AppButton buttonText="GET IN TOUCH" />
+                    <AppButtonTran class="ms-3 align-items-end" buttonText="READ MORE" />
+                </div>
             </div>
         </div>
     </section>
@@ -104,6 +104,7 @@ export default {
 
 <style scoped lang="scss">
 @use "./style/partials/variables" as *;
+@use "./style/general.scss";
 
 .wrapper {
     width: 100%;
@@ -119,22 +120,34 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-};
-.my-container{
+}
+
+;
+
+.my-container {
     width: 40%;
     padding-top: 8rem;
-    h1{
+
+    h1 {
         color: $White;
         font-size: 4rem;
-    };
-    h4{
+    }
+
+    ;
+
+    h5 {
         color: $FountainBlue;
-    };
-    p{
+    }
+
+    ;
+
+    p {
         color: $White;
     }
 
-};
+}
+
+;
 
 .info {
     color: $White;
