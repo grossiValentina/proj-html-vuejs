@@ -2,7 +2,9 @@
 
 export default {
     props: {
-        vehicleType: [
+        vehicleType: {
+            type: Array,
+            default: () => [
             {
                 size: "Light",
                 maxWh: "Max Weigth 1200 kg"
@@ -18,11 +20,14 @@ export default {
         ]
     },
 }
+}
+
 </script>
 
 
 <template>
-    <div class="my-card" style="max-width: 250px;">
+    <div v-for="(item, index) in vehicleTypes" :key="index" 
+    class="my-card" style="max-width: 250px;">
         <div class="row">
             <div class="col-md-4">
                 <img src="../assets/img/truck-1.png"  alt="...">
