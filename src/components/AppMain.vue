@@ -1,5 +1,6 @@
 <script>
 import AppList from "./AppList.vue";
+import CardVehicle from "./CardVehicle.vue";
 
 export default {
     data() {
@@ -24,7 +25,7 @@ export default {
 
         }
     },
-    components: {AppList}
+    components: {AppList, CardVehicle, }
 }
 </script>
 
@@ -55,8 +56,8 @@ export default {
 
             <!-- colonna Vehicle Types   -->
             <div class="col">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maxime minus unde quos excepturi ipsam
-                totam, nobis
+               <h4>Vehicle Types</h4>
+               <CardVehicle />
             </div>
 
         </div>
