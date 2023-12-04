@@ -1,5 +1,6 @@
 <script>
 import AppButton from "./AppButton.vue";
+import AppButtonTran from "./AppButtonTran.vue";
 export default {
     data() {
         return {
@@ -24,7 +25,7 @@ export default {
             ]
         }
     },
-    components: { AppButton }
+    components: { AppButton, AppButtonTran }
 
 };
 
@@ -90,7 +91,11 @@ export default {
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quod, reiciendis impedit architecto sunt
                     nulla consequatur, corporis ducimus doloremque hic, eligendi aut quidem totam qui ratione nam explicabo.
                     Est, quaerat.</p>
-                <AppButton buttonText="GET IN TOUCH"/>
+                    <div class="d-flex align-items-end pt-2">
+                        <AppButton buttonText="GET IN TOUCH"/>
+                        <AppButtonTran class="ms-3 align-items-end" buttonText="READ MORE"/>
+                    </div>
+                
             </div>
         </div>
     </section>
