@@ -1,8 +1,10 @@
 <script>
-
+import AppButton from "./AppButton.vue";
 export default {
     data() {
         return {
+            buttonText: "Clicca qui",
+
             menu: [
                 {
                     title: "HOME"
@@ -22,6 +24,7 @@ export default {
             ]
         }
     },
+    components: { AppButton }
 
 };
 
@@ -35,7 +38,7 @@ export default {
 
         <div class="container">
             <!-- barra recapiti e orari -->
-            <div class="info d-flex justify-content-around pt-2">
+            <div class="info d-flex justify-content-between pt-2">
 
                 <div class="opening d-flex">
                     <p><i class="fa-solid fa-clock px-1"></i>Open Hours: Mon - Sat - 9:00 - 18:00</p>
@@ -56,13 +59,13 @@ export default {
     <!-- navbar con informazioni -->
     <section class="wrapper-search">
         <div class="container">
-            <div class="navbar d-flex justify-content-around">
+            <div class="navbar d-flex justify-content-between">
 
-                <div class="d-flex">
+                <div class="d-flex pt-3">
                     <h4 class="next ps-3">NEX</h4>
                     <h4>GEN</h4>
                 </div>
-
+                <!-- link ripetuti  -->
                 <div class="d-flex">
                     <div class="menu d-flex">
                         <ul v-for="item in menu" :key="item.title">
@@ -70,14 +73,24 @@ export default {
                         </ul>
                     </div>
 
-                    <div>
-                        <i class="fa-regular fa-user text-center"></i>
+                    <div class="pt-4">
+                        <i class="fa-regular fa-user text-center px-4"></i>
                     </div>
-
-                    <div>
-                        <button></button>
+                    <!-- elemento bottone  -->
+                    <div class="mt-3">
+                        <AppButton buttonText="GET IN TOUCH" />
                     </div>
                 </div>
+            </div>
+
+            <!-- titolo del main e contenuto  -->
+            <div class="my-container">
+                <h4>LOGISTICS SERVICE</h4>
+                <h1 class="fw-bold">CARGO TRANSPORT</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta quod, reiciendis impedit architecto sunt
+                    nulla consequatur, corporis ducimus doloremque hic, eligendi aut quidem totam qui ratione nam explicabo.
+                    Est, quaerat.</p>
+                <AppButton buttonText="GET IN TOUCH"/>
             </div>
         </div>
     </section>
@@ -101,27 +114,58 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-}
+};
+.my-container{
+    width: 40%;
+    padding-top: 8rem;
+    h1{
+        color: $White;
+        font-size: 4rem;
+    };
+    h4{
+        color: $FountainBlue;
+    };
+    p{
+        color: $White;
+    }
+
+};
 
 .info {
     color: $White;
     font-size: 13px;
-};
+}
+
+;
 
 ul {
     list-style-type: none;
     padding-top: 1.5rem;
+    font-size: 15px;
 
     a {
         color: $White;
-    };
-};
-h4{
-    color: $White;
-};
-.next{
-    background-color: $FountainBlue;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px; 
+    }
+
+    ;
 }
-</style>
+
+;
+
+h4 {
+    color: $White;
+}
+
+;
+
+.next {
+    background-color: rgba($FountainBlue, 0.5);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+;
+
+i {
+    color: $White;
+}</style>
