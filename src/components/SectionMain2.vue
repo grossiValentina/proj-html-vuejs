@@ -60,7 +60,7 @@ export default {
             </div>
 
             <!-- cards main services  -->
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between section-card">
 
                 <div v-for="item in card" class="card" style="width: 19rem;">
                     <div class="card-body">
@@ -69,31 +69,11 @@ export default {
                             <a href=""><i class="arrow fa-solid fa-arrow-right"></i></a>
                         </div>
                         
-                        <h6 class="card-title pt-3">{{ item.title }}</h6>
+                        <h6 class="card-title pt-3 fw-bold">{{ item.title }}</h6>
                         <p class="card-text">{{ item.content }}</p>
                     </div>
                 </div>
             </div>
-
-                <!-- <div class="card" style="width: 19rem;"> 
-                    <div class="card-body">
-                        <i class="fa-solid fa-temperature-low"></i>
-                        <h6 class="card-title">titolo</h6>
-                        <p class="card-text">paragrafo</p>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 19rem;">
-                    <div class="card-body">
-                        <i class="fa-solid fa-truck"></i>
-                        <h6 class="card-title">titolo</h6>
-                        <p class="card-text">paragrafo</p>
-                    </div>
-                </div>-->
-            
-
-
-
         </div>
     </section>
 </template>
@@ -105,7 +85,7 @@ export default {
 
 .wrapper {
     width: 100%;
-    background-color: lightslategray;
+    background-color: $Woodsmoke;
     padding-top: 6rem;
 }
 
@@ -126,8 +106,13 @@ p {
     color: $White;
 };
 
+.section-card{
+    padding-bottom: 5rem;
+}
+
 .card{
-    background-color: $MidGray;
+    background-color: $Shark;
+    
     h6{
         color: $White;
     };
