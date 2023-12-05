@@ -1,8 +1,9 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppButton from "./components/AppButton.vue";
-import SectionMain1 from "./components/SectionMain1.vue";
-import SectionMain2 from "./components/SectionMain2.vue";
+import SectionExellence from "./components/SectionExellence.vue";
+import SectionServices from "./components/SectionServices.vue";
+import SectionLogistical from "./components/SectionLogistical.vue";
 import AppFooter from "./components/AppFooter.vue";
 import { store } from "./store.js";
 
@@ -18,8 +19,9 @@ export default {
   components :{
     AppHeader,
     AppButton,
-    SectionMain1,
-    SectionMain2,
+    SectionExellence,
+    SectionServices,
+    SectionLogistical,
     AppFooter,
 },
 }
@@ -29,8 +31,9 @@ export default {
 <template>
 <AppHeader />
 <AppButton />
-<SectionMain1/>
-<SectionMain2 />
+<SectionExellence/>
+<SectionServices />
+<SectionLogistical />
 <AppFooter />
 
  

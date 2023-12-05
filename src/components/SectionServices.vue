@@ -46,7 +46,7 @@ export default {
                 <!-- colonna paragrafo  -->
                 <div class="col-8">
                     <div>
-                        <p class="pt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit natus autem omnis
+                        <p class="pt-3 pb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit natus autem omnis
                             animi libero quo soluta dolores recusandae nihil ipsum, provident, consectetur obcaecati
                             blanditiis ab sint </p>
                     </div>
@@ -59,7 +59,7 @@ export default {
 
             </div>
 
-            <!-- cards main services  -->
+            <!-- cards sezione main services  -->
             <div class="d-flex justify-content-between section-card">
 
                 <div v-for="item in card" class="card" style="width: 19rem;">
