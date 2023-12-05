@@ -4,8 +4,8 @@ import AppButton from "./components/AppButton.vue";
 import SectionExellence from "./components/SectionExellence.vue";
 import SectionServices from "./components/SectionServices.vue";
 import SectionLogistical from "./components/SectionLogistical.vue";
+import SectionResults from "./components/SectionResults.vue";
 import AppFooter from "./components/AppFooter.vue";
-import { store } from "./store.js";
 
 
 export default {
@@ -22,6 +22,7 @@ export default {
     SectionExellence,
     SectionServices,
     SectionLogistical,
+    SectionResults,
     AppFooter,
 },
 }
@@ -34,6 +35,7 @@ export default {
 <SectionExellence/>
 <SectionServices />
 <SectionLogistical />
+<SectionResults />
 <AppFooter />
 
  
