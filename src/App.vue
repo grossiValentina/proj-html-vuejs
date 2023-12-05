@@ -5,6 +5,7 @@ import SectionExellence from "./components/SectionExellence.vue";
 import SectionServices from "./components/SectionServices.vue";
 import SectionLogistical from "./components/SectionLogistical.vue";
 import SectionResults from "./components/SectionResults.vue";
+import SectionTrusted from "./components/SectionTrusted.vue";
 import AppFooter from "./components/AppFooter.vue";
 
 
@@ -23,6 +24,7 @@ export default {
     SectionServices,
     SectionLogistical,
     SectionResults,
+    SectionTrusted,
     AppFooter,
 },
 }
@@ -36,6 +38,7 @@ export default {
 <SectionServices />
 <SectionLogistical />
 <SectionResults />
+<SectionTrusted />
 <AppFooter />
 
  

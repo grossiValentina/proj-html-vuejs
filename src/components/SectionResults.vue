@@ -46,7 +46,7 @@ export default {
         </div>
 
 
-        <div class="container-numbers mt-4">
+        <div class="container mt-4">
             <div class="row row-cols-5 justify-content-evenly">
 
                 <!--  card punti focali procedura logistica  -->
@@ -81,9 +81,7 @@ export default {
     margin: 0 auto;
 }
 
-.container-numbers {
-    width: 70%;
-    margin: 0 auto;
+.container {
     margin-bottom: 6rem;
 }
 
