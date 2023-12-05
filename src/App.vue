@@ -1,18 +1,13 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppButton from "./components/AppButton.vue";
-import AppMain from "./components/AppMain.vue";
+import SectionMain1 from "./components/SectionMain1.vue";
+import SectionMain2 from "./components/SectionMain2.vue";
 import AppFooter from "./components/AppFooter.vue";
 import { store } from "./store.js";
 
 
 export default {
-  data() {
-    return {
-      store
-    };
-  },
-    
   
 
   methods: {
@@ -23,7 +18,8 @@ export default {
   components :{
     AppHeader,
     AppButton,
-    AppMain,
+    SectionMain1,
+    SectionMain2,
     AppFooter,
 },
 }
@@ -33,7 +29,8 @@ export default {
 <template>
 <AppHeader />
 <AppButton />
-<AppMain />
+<SectionMain1/>
+<SectionMain2 />
 <AppFooter />
 
  
