@@ -111,7 +111,7 @@ export default {
     height: 40px;
     background-color: $MidGray;
 
-};
+}
 
 .wrapper-search {
     width: 100%;
@@ -122,8 +122,6 @@ export default {
     height: 100vh;
 }
 
-;
-
 .my-container {
     width: 40%;
     padding-top: 8rem;
@@ -133,13 +131,9 @@ export default {
         font-size: 4rem;
     }
 
-    ;
-
     h5 {
         color: $FountainBlue;
     }
-
-    ;
 
     p {
         color: $White;
@@ -147,14 +141,10 @@ export default {
 
 }
 
-;
-
 .info {
     color: $White;
     font-size: 13px;
 }
-
-;
 
 ul {
     list-style-type: none;
@@ -164,26 +154,18 @@ ul {
     a {
         color: $White;
     }
-
-    ;
 }
-
-;
 
 h4 {
     color: $White;
 }
-
-;
-
 .next {
     background-color: rgba($FountainBlue, 0.5);
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
-;
-
 i {
     color: $White;
-}</style>
+}
+</style>

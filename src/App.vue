@@ -6,6 +6,7 @@ import SectionServices from "./components/SectionServices.vue";
 import SectionLogistical from "./components/SectionLogistical.vue";
 import SectionResults from "./components/SectionResults.vue";
 import SectionTrusted from "./components/SectionTrusted.vue";
+import SectionMessage from "./components/SectionMessage.vue";
 import AppFooter from "./components/AppFooter.vue";
 
 
@@ -25,6 +26,7 @@ export default {
     SectionLogistical,
     SectionResults,
     SectionTrusted,
+    SectionMessage,
     AppFooter,
 },
 }
@@ -32,6 +34,7 @@ export default {
 </script>
 
 <template>
+
 <AppHeader />
 <AppButton />
 <SectionExellence/>
@@ -39,9 +42,9 @@ export default {
 <SectionLogistical />
 <SectionResults />
 <SectionTrusted />
+<SectionMessage />
 <AppFooter />
 
- 
 </template>
 
 <style lang="scss">
