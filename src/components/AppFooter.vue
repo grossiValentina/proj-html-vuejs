@@ -7,28 +7,17 @@ import CardFooter from "./CardFooter.vue";
 export default {
     data() {
         return {
-            cardSupport: [
+        Title: [
                 {
-                    title: "About"
+                    content: "About"
                 },
                 {
-                    content: "Responsibility"
+                    content: "Support"
                 },
                 {
-                    content: "Terms of Use"
+                    content: "Transport"
                 },
-                {
-                    content: "About Cookies"
-                },
-                {
-                    content: "Privacy Policy"
-                },
-                {
-                    content: "Accessibility"
-                },
-                {
-                    content: "Information"
-                },
+               
             ]
 
 
