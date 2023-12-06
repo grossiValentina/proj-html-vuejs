@@ -119,6 +119,7 @@ export default {
 
 .container {
     padding-top: 5rem;
+    padding-bottom: 5rem;
 };
 .title-bg {
     background-color: rgba($FountainBlue, 0.5);

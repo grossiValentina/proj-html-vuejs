@@ -1,6 +1,9 @@
 <script>
 import AppButton from "./AppButton.vue";
 import AppButtonTran from "./AppButtonTran.vue";
+import Title from "./Title.vue";
+import Contacts from "./Contacts.vue";
+
 export default {
     data() {
         return {
@@ -25,10 +28,9 @@ export default {
             ]
         }
     },
-    components: { AppButton, AppButtonTran }
+    components: { AppButton, AppButtonTran, Title, Contacts, }
 
 };
-
 
 
 </script>
@@ -46,8 +48,8 @@ export default {
                 </div>
 
                 <div class="contacts d-flex">
-                    <p><i class="fa-solid fa-phone mb-0 px-1"></i>+1(305)1234-5678</p>
-                    <p class="px-4"><i class="fa-solid fa-envelope px-1"></i>hello@example.com</p>
+                    <!-- contatti riutilizzabili -->
+                    <Contacts class="d-flex mx-4" contact="contact"/>
                     <p class="px-3"><i class="fa-brands fa-facebook"></i></p>
                     <p class="px-3"><i class="fa-brands fa-twitter"></i></p>
                     <p class="px-3"><i class="fa-brands fa-linkedin"></i></p>
@@ -62,10 +64,11 @@ export default {
         <div class="container">
             <div class="navbar d-flex justify-content-between">
 
-                <div class="d-flex pt-3">
-                    <h4 class="next ps-3">NEX</h4>
-                    <h4>GEN</h4>
+                 <!-- titolo riutilizzabile  -->
+                <div class="pt-4">
+                    <Title titleStyle="titleStyle" />
                 </div>
+
                 <!-- link ripetuti  -->
                 <div class="d-flex">
                     <div class="menu d-flex">
@@ -158,11 +161,6 @@ ul {
 
 h4 {
     color: $White;
-}
-.next {
-    background-color: rgba($FountainBlue, 0.5);
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
 }
 
 i {
