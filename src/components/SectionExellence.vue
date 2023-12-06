@@ -99,17 +99,10 @@ export default {
                     <img class="bg-white" src="../assets/img/certificate.png" alt="">
                     <img class="bg-white" src="../assets/img/certificate.png" alt="">
                 </div>
-
-
-
-
             </div>
-
-        </div>
-        <div>
-
         </div>
     </section>
+    
 </template>
 
 
@@ -120,32 +113,48 @@ export default {
 .container {
     padding-top: 5rem;
     padding-bottom: 5rem;
-};
+}
+
+;
+
 .title-bg {
     background-color: rgba($FountainBlue, 0.5);
     color: $BlueLagoon;
-};
+}
+
+;
+
 .line-green {
     border-left: 4px solid rgba($FountainBlue, 0.5);
     height: 5rem;
-};
+}
+
+;
 
 ul {
     margin-left: 12px;
     padding: 0;
-};
+}
 
-.my-card{
-  border-bottom: 1px solid $MidGray;   
-};
+;
 
-img{
+.my-card {
+    border-bottom: 1px solid $MidGray;
+}
+
+;
+
+img {
     padding: .3rem;
-    background-color:  rgba($FountainBlue, 0.3);
+    background-color: rgba($FountainBlue, 0.3);
     width: 5rem;
     margin-top: .5rem;
-};
-.card-content{
+}
+
+;
+
+.card-content {
     padding: .5rem;
-};
-</style>
+}
+
+;</style>

@@ -2,50 +2,86 @@
 import AppButtonTran from "./AppButtonTran.vue";
 import Title from "./Title.vue";
 import Contacts from "./Contacts.vue";
+import CardFooter from "./CardFooter.vue";
 
 export default {
     data() {
         return {
-            
+            cardSupport: [
+                {
+                    title: "About"
+                },
+                {
+                    content: "Responsibility"
+                },
+                {
+                    content: "Terms of Use"
+                },
+                {
+                    content: "About Cookies"
+                },
+                {
+                    content: "Privacy Policy"
+                },
+                {
+                    content: "Accessibility"
+                },
+                {
+                    content: "Information"
+                },
+            ]
+
+
         }
     },
-    components: { AppButtonTran, Title, Contacts }
-    
+    components: { AppButtonTran, Title, Contacts, CardFooter }
+
 }
 </script>
 
 <template>
-  <section class="wrapper">
-    <div class="container">
-        <div class="row row-cols-4">
-            <div class="col">
-                
-                 <!-- titolo riutilizzabile  -->
-                <Title  titleStyle="titleStyle" />
-                
-                <p>Lorem ipsum dolor sit amet consectetur</p>
+    <section class="wrapper">
+        <div class="container">
+            <div class="row row-cols-4">
+                <div class="col">
 
-                 <!-- contatti riutilizzabili  -->
-                 <div class="mt-4 mb-4">
-                    <Contacts contact="contact"/>
-                    <p><i class="p-1 fa-solid fa-location-dot"></i>Main Avenue,987</p>
-                 </div>
+                    <!-- titolo riutilizzabile  -->
+                    <Title titleStyle="titleStyle" />
 
-                 <!-- bottone riutilizzabile  -->
-                <AppButtonTran buttonText="GET IN TOUCH"/>
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+
+                    <!-- contatti riutilizzabili  -->
+                    <div class="mt-4 mb-4">
+                        <Contacts contact="contact" />
+                        <p><i class="p-1 fa-solid fa-location-dot"></i>Main Avenue,987</p>
+                    </div>
+
+                    <!-- bottone riutilizzabile  -->
+                    <AppButtonTran buttonText="GET IN TOUCH" />
+                </div>
+
+                <!-- card con lista riutilizzabili  -->
+                <div class="col">
+                    <CardFooter />
+
+                </div>
+
+
+
+                <div class="col">
+                 
+                </div>
+
+                <div class="col">
+                    
+                </div>
+
+
             </div>
-             
-             <!-- card con lista  -->
-            <div class="col">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt culpa, aut quae ut, voluptatibus animi aliquid iusto recusandae voluptatum obcaecati autem! Animi, id quia neque ad quos eligendi odit iusto.</div>
 
-            <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptatum voluptatibus voluptatem error quidem numquam magnam voluptates doloremque natus. Laborum facilis animi voluptate reiciendis doloremque eius exercitationem aliquam iure qui!</div>
-
-            <div class="col">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, quaerat voluptas assumenda placeat natus iusto possimus ab debitis adipisci amet maiores mollitia nostrum similique, nihil nemo explicabo? Dolore, maiores accusantium?</div>
         </div>
 
-    </div>
-
-  </section> 
+    </section>
 </template>
 
 
@@ -53,15 +89,17 @@ export default {
 @use "./style/partials/variables" as *;
 @use "./style/general.scss";
 
-.wrapper{
+.wrapper {
     background-color: pink;
 }
-.container{
+
+.container {
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
-p{
+p {
     color: $White;
 }
+
 </style>

@@ -7,8 +7,7 @@ import Contacts from "./Contacts.vue";
 export default {
     data() {
         return {
-            buttonText: "Clicca qui",
-
+    
             menu: [
                 {
                     title: "HOME"
