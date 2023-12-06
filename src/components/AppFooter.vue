@@ -5,23 +5,29 @@ import Contacts from "./Contacts.vue";
 import CardFooter from "./CardFooter.vue";
 
 export default {
+
     data() {
         return {
-        card: [
-                {
-                    title: "About",
-                    list: ["The Company", "Insitutonal", "Social & Events", "Innovation", "Environment", "Technology"]
-                },
-                {
-                    title: "Support",
-                    list: ["Industrialized", "Chemical", "Packaged Liquids", "Construction", "Laminated Wood", "And others"]
-                },
-                {
-                    title: "Transport",
-                    list: ["Responsibility", "Terms of Use", "About Cookies", "Privacy policy", "Accessibility", "Information"]
-                },
-               
-            ]
+            firstCard:
+            {
+                title: "About",
+                list: ["The Company", "Insitutonal", "Social & Events", "Innovation", "Environment", "Technology"]
+            },
+
+            secondCard:
+
+            {
+                title: "Support",
+                list: ["Industrialized", "Chemical", "Packaged Liquids", "Construction", "Laminated Wood", "And others"]
+            },
+
+            thirdCard:
+            {
+                title: "Transport",
+                list: ["Responsibility", "Terms of Use", "About Cookies", "Privacy policy", "Accessibility", "Information"]
+            },
+
+
 
 
         }
@@ -54,14 +60,14 @@ export default {
 
                 <!-- card con lista riutilizzabili  -->
                 <div class="col">
-
-                    <CardFooter :card="card"/>
-
+                    <CardFooter :card="firstCard" />
                 </div>
-
-
-
-
+                <div class="col">
+                    <CardFooter :card="secondCard" />
+                </div>
+                <div class="col">
+                    <CardFooter :card="thirdCard" />
+                </div>
 
             </div>
 
@@ -76,7 +82,7 @@ export default {
 @use "./style/general.scss";
 
 .wrapper {
-    background-color: pink;
+    background-color: $Shark;
 }
 
 .container {
@@ -87,5 +93,4 @@ export default {
 p {
     color: $White;
 }
-
 </style>
