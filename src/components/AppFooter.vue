@@ -7,15 +7,18 @@ import CardFooter from "./CardFooter.vue";
 export default {
     data() {
         return {
-        Title: [
+        card: [
                 {
-                    content: "About"
+                    title: "About",
+                    list: ["The Company", "Insitutonal", "Social & Events", "Innovation", "Environment", "Technology"]
                 },
                 {
-                    content: "Support"
+                    title: "Support",
+                    list: ["Industrialized", "Chemical", "Packaged Liquids", "Construction", "Laminated Wood", "And others"]
                 },
                 {
-                    content: "Transport"
+                    title: "Transport",
+                    list: ["Responsibility", "Terms of Use", "About Cookies", "Privacy policy", "Accessibility", "Information"]
                 },
                
             ]
@@ -23,7 +26,7 @@ export default {
 
         }
     },
-    components: { AppButtonTran, Title, Contacts, CardFooter }
+    components: { AppButtonTran, Title, Contacts, CardFooter, }
 
 }
 </script>
@@ -51,19 +54,13 @@ export default {
 
                 <!-- card con lista riutilizzabili  -->
                 <div class="col">
-                    <CardFooter />
+
+                    <CardFooter :card="card"/>
 
                 </div>
 
 
 
-                <div class="col">
-                 
-                </div>
-
-                <div class="col">
-                    
-                </div>
 
 
             </div>

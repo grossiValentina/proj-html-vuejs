@@ -3,7 +3,8 @@
 export default {
     props: {
         card: {
-            type: String,
+            title: String,
+            list: Array,
 
         }
     },
@@ -13,12 +14,13 @@ export default {
 
 <template>
     <div class="card" style="width: 14rem;">
-        <div class="card-body">
-            <h4 class="card-title fw-bold"></h4>
+
+        <div v-for="item in card" class="card-body">
+            <h4 class="card-title fw-bold">{{ item.title }}</h4>
             <ul>
-                <li class="d-flex text-start">
+                <li v-for="arrayList in item.list" class="d-flex text-start">
                     <i class="icon fa-solid fa-chevron-right"></i>
-                    <p class="mb-0"></p>
+                    <p class="mb-0">{{ arrayList }}</p>
                 </li>
             </ul>
 
@@ -33,6 +35,7 @@ export default {
 .card{
     background-color: gray;
 }
+
 ul{
     list-style-type: none;
     padding: 0;
